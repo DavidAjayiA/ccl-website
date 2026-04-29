@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — Consulting Club of Lagos</title>
+  <link rel="stylesheet" href="shared.css">
+  <link rel="stylesheet" href="inner.css">
+</head>
+<body>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <span class="tag">Media Gallery</span>
+    <h1>CCL in <em>Action</em></h1>
+    <p>Photos and videos from our events, trainings, bootcamps, and case competitions.</p>
+  </div>
+</div>
+
+<section class="sec">
+  <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:36px;" class="anim">
+    <button class="gf-btn active" data-filter="all">All</button>
+    <button class="gf-btn" data-filter="events">Events</button>
+    <button class="gf-btn" data-filter="training">Trainings</button>
+    <button class="gf-btn" data-filter="comp">Competitions</button>
+    <button class="gf-btn" data-filter="social">Social</button>
+  </div>
+
+  <div class="gallery-grid" id="galleryGrid">
+    <div class="gallery-item tall anim" data-delay="0" data-cat="events">
+      <div class="gallery-placeholder">🎤<br><small style="font-size:14px;margin-top:8px;display:block;color:var(--ink-muted);">Speaker Night</small></div>
+      <div class="gallery-overlay"><div class="gallery-caption">Guest Speaker Night — April 2025<br>McKinsey Engagement Manager</div></div>
+    </div>
+    <div class="gallery-item anim" data-delay="0.06" data-cat="training">
+      <div class="gallery-placeholder">🏕️<br><small style="font-size:13px;margin-top:8px;display:block;color:var(--ink-muted);">Bootcamp</small></div>
+      <div class="gallery-overlay"><div class="gallery-caption">Strategy Bootcamp 2024 — Day 1</div></div>
+    </div>
+    <div class="gallery-item anim" data-delay="0.12" data-cat="comp">
+      <div class="gallery-placeholder">🏆<br><small style="font-size:13px;margin-top:8px;display:block;color:var(--ink-muted);">Competition</small></div>
+      <div class="gallery-overlay"><div class="gallery-caption">National Case Championship — Winning Moment</div></div>
+    </div>
+    <div class="gallery-item wide anim" data-delay="0.18" data-cat="social">
+      <div class="gallery-placeholder">🥳<br><small style="font-size:14px;margin-top:8px;display:block;color:var(--ink-muted);">End of Semester Mixer</small></div>
+      <div class="gallery-overlay"><div class="gallery-caption">End of Semester Mixer — December 2024 · 200+ Attendees</div></div>
+    </div>
+    <div class="gallery-item anim" data-delay="0.24" data-cat="training">
+      <div class="gallery-placeholder">📊<br><small style="font-size:13px;margin-top:8px;display:block;color:var(--ink-muted);">Workshop</small></div>
+      <div class="gallery-overlay"><div class="gallery-caption">Financial Modelling Workshop — Feb 2025</div></div>
+    </div>
+    <div class="gallery-item anim" data-delay="0.3" data-cat="events">
+      <div class="gallery-placeholder">👥<br><small style="font-size:13px;margin-top:8px;display:block;color:var(--ink-muted);">Networking</small></div>
+      <div class="gallery-overlay"><div class="gallery-caption">Alumni Networking Dinner — March 2025</div></div>
+    </div>
+    <div class="gallery-item anim" data-delay="0.36" data-cat="comp">
+      <div class="gallery-placeholder">⚔️<br><small style="font-size:13px;margin-top:8px;display:block;color:var(--ink-muted);">Case Battle</small></div>
+      <div class="gallery-overlay"><div class="gallery-caption">CCL Internal Case Challenge — Semi Final Round</div></div>
+    </div>
+    <div class="gallery-item anim" data-delay="0.42" data-cat="training">
+      <div class="gallery-placeholder">🎭<br><small style="font-size:13px;margin-top:8px;display:block;color:var(--ink-muted);">Mock Interview</small></div>
+      <div class="gallery-overlay"><div class="gallery-caption">Mock Interview Clinic — 40 members participated</div></div>
+    </div>
+    <div class="gallery-item anim" data-delay="0.48" data-cat="social">
+      <div class="gallery-placeholder">🌅<br><small style="font-size:13px;margin-top:8px;display:block;color:var(--ink-muted);">Welcome Day</small></div>
+      <div class="gallery-overlay"><div class="gallery-caption">New Member Orientation — January 2025</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec-alt">
+  <div class="join-cta anim" style="text-align:center;">
+    <h2>Want to Be in the Next Gallery?</h2>
+    <p style="margin-top:8px;">Join CCL and be part of the community making these moments happen.</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:28px;justify-content:center;">
+      <a href="membership.html" class="btn btn-green">Join CCL →</a>
+      <a href="events.html" class="btn btn-outline">See Upcoming Events</a>
+    </div>
+  </div>
+</section>
+
+<style>
+.gf-btn{padding:7px 14px;border-radius:100px;border:1px solid var(--border);background:white;color:var(--ink-muted);font-size:12px;font-weight:500;cursor:pointer;font-family:'Outfit',sans-serif;transition:all 0.2s;}
+.gf-btn:hover{border-color:var(--green);color:var(--green);}
+.gf-btn.active{background:var(--green);border-color:var(--green);color:white;}
+</style>
+<script src="nav.js"></script>
+<script>
+document.querySelectorAll('.gf-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.gf-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.dataset.filter;
+    document.querySelectorAll('.gallery-item').forEach(item => {
+      item.style.display = (filter === 'all' || item.dataset.cat === filter) ? 'flex' : 'none';
+    });
+  });
+});
+</script>
+</body>
+</html>
