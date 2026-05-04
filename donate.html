@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate — Consulting Club of Lagos</title>
+  <link rel="stylesheet" href="shared.css">
+  <link rel="stylesheet" href="donate.css">
+  <link rel="shortcut icon" href="ccl logo.ico.jpg" type="image/x-icon">
+</head>
+<body>
+
+<!-- ── PAGE HERO ── -->
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <span class="tag">Support Our Mission</span>
+    <h1>Make an <em>Impact</em></h1>
+    <p>Your donation directly enables us to run free workshops, sponsor scholarships, and create opportunities for students who couldn't otherwise access world-class consulting education.</p>
+  </div>
+</section>
+
+<!-- ── MAIN CONTENT ── -->
+<section class="sec donate-main">
+  <div class="donate-container">
+    <!-- Why Donate -->
+    <!-- <div class="donate-section anim">
+      <h2 class="section-title">Why Your Support <em>Matters</em></h2>
+      <p class="section-sub">Every naira donated goes directly to furthering our mission of developing Africa's next generation of business leaders.</p>
+
+      <div class="impact-grid">
+        <div class="impact-card anim" data-delay="0.1">
+          <div class="impact-icon">🎓</div>
+          <h3>Education</h3>
+          <p>Funding workshops, bootcamps, and training programmes led by industry experts.</p>
+        </div>
+        <div class="impact-card anim" data-delay="0.2">
+          <div class="impact-icon">🤝</div>
+          <h3>Mentorship</h3>
+          <p>Connecting students with senior consultants at top firms for guidance and support.</p>
+        </div>
+        <div class="impact-card anim" data-delay="0.3">
+          <div class="impact-icon">🌍</div>
+          <h3>Community</h3>
+          <p>Building Africa's consulting community through events, competitions, and collaboration.</p>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Account Information -->
+    <div class="donate-section anim" data-delay="0.05">
+      <h2 class="section-title">Bank Account <em>Details</em></h2>
+      <p class="section-sub">You can support CCL through direct bank transfer using the information below.</p>
+
+      <div class="account-card">
+        <div class="account-field">
+          <span class="field-label">Account Name</span>
+          <span class="field-value">Consulting Club of Lagos</span>
+        </div>
+        <div class="account-divider"></div>
+        <div class="account-field">
+          <span class="field-label">Bank Name</span>
+          <span class="field-value">OPay Digital Services Limited</span>
+        </div>
+        <div class="account-divider"></div>
+        <div class="account-field">
+          <span class="field-label">Account Number</span>
+          <span class="field-value copy-field" data-copy="7065058196">
+            0000000000
+            <button class="copy-btn" aria-label="Copy account number">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                <rect x="9" y="9" width="7" height="7"></rect>
+              </svg>
+            </button>
+          </span>
+        </div>
+        <div class="account-divider"></div>
+        <div class="account-field">
+          <span class="field-label">USSD Code</span>
+          <span class="field-value">*955#</span>
+        </div>
+      </div>
+
+      <div class="account-note">
+        <strong>Please include your name or email in the transfer reference</strong> so we can send you a donation receipt and impact report.
+      </div>
+    </div>
+
+    <!-- Donation Tiers -->
+    <div class="donate-section anim" data-delay="0.1">
+      <h2 class="section-title">Where Your <em>Donation Goes</em></h2>
+      <p class="section-sub">See the direct impact of your contribution.</p>
+
+      <div class="tiers-grid">
+        <div class="tier-card anim" data-delay="0">
+          <div class="tier-amount">₦5,000</div>
+          <div class="tier-label">Bootcamp Sponsor</div>
+          <p class="tier-desc">Sponsors one member's attendance at our intensive bootcamp programme.</p>
+        </div>
+        <div class="tier-card anim" data-delay="0.08">
+          <div class="tier-amount">₦25,000</div>
+          <div class="tier-label">Workshop Founder</div>
+          <p class="tier-desc">Funds quarterly industry-led workshops on strategy and consulting frameworks.</p>
+        </div>
+        <div class="tier-card anim" data-delay="0.16">
+          <div class="tier-amount">₦100,000</div>
+          <div class="tier-label">Competition Sponsor</div>
+          <p class="tier-desc">Sponsors our annual case competition with prizes and recognition.</p>
+        </div>
+           <div class="tier-card anim" data-delay="0.16">
+          <div class="tier-amount">₦500,000 - ₦1,000,000</div>
+          <div class="tier-label">Major Impact Sponsor</div>
+          <p class="tier-desc">Sponsor significant initiatives that drive lasting change in our community.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact for Enquiries -->
+    <div class="donate-section donate-contact anim" data-delay="0.15">
+      <h2 class="section-title">Questions? <em>Reach Out</em></h2>
+      <p class="section-sub">If you have any questions about donations or would like to discuss partnership opportunities, we'd love to hear from you.</p>
+      <div class="contact-links">
+        <a href="mailto:consultingcluboflagos@gmail.com" class="btn btn-green">Send Email →</a>
+        <a href="contact.html" class="btn btn-outline">Contact Form →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER IS INJECTED VIA nav.js ── -->
+
+<script src="nav.js"></script>
+<script>
+  // Copy to clipboard functionality
+  document.querySelectorAll('.copy-field').forEach(field => {
+    const copyBtn = field.querySelector('.copy-btn');
+    copyBtn.addEventListener('click', async () => {
+      const text = field.dataset.copy;
+      try {
+        await navigator.clipboard.writeText(text);
+        const originalHTML = copyBtn.innerHTML;
+        copyBtn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>';
+        setTimeout(() => {
+          copyBtn.innerHTML = originalHTML;
+        }, 2000);
+      } catch (err) {
+        console.error('Failed to copy:', err);
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

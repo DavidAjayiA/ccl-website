@@ -19,6 +19,7 @@
   <nav class="site-nav" id="siteNav">
     <a href="index.html" class="nav-logo">
       <div class="nav-logo-mark">
+      
         <img src="ccl_logo-removebg-preview.png">
       </div>
       <div class="nav-logo-text">
@@ -49,13 +50,13 @@
         </div>
         <p class="footer-desc">Equipping the next generation of African business leaders with the skills, networks, and mindset to shape the continent's future.</p>
         <div class="footer-social">
-          <a href="#" class="social-btn" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/company/consulting-club-of-lagos/" class="social-btn" aria-label="LinkedIn">
             <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
           </a>
-          <a href="#" class="social-btn" aria-label="Instagram">
+          <a href="https://www.instagram.com/consultingcluboflagos/" class="social-btn" aria-label="Instagram">
             <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
           </a>
-          <a href="#" class="social-btn" aria-label="X / Twitter">
+          <a href="https://twitter.com/consultingcluboflagos" class="social-btn" aria-label="X / Twitter">
             <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
           </a>
         </div>
@@ -67,6 +68,7 @@
           <li><a href="programs.html">Programs</a></li>
           <li><a href="events.html">Events</a></li>
           <li><a href="membership.html">Membership</a></li>
+          <li><a href="index.html">Home</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -82,7 +84,7 @@
         <h4>Contact</h4>
         <ul>
           <li><a href="contact.html">Get in Touch</a></li>
-          <li><a href="mailto:hello@ccl.ng">hello@ccl.ng</a></li>
+          <li><a href="mailto:consultingcluboflagos@gmail.com">consultingcluboflagos@gmail.com</a></li>
           <li><a href="membership.html">Join CCL</a></li>
         </ul>
       </div>

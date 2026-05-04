@@ -1,0 +1,297 @@
+/* ============================================
+   donate.css — Donate Page Styles
+   ============================================ */
+
+.donate-main {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.donate-container {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+/* ─── SECTION ─── */
+.donate-section {
+  animation: fadeUp 0.55s ease forwards;
+}
+
+.donate-section h2 {
+  margin-bottom: 12px;
+  font-size: clamp(28px, 3vw, 42px);
+}
+
+.donate-section > .section-sub {
+  margin-bottom: 40px;
+}
+
+/* ─── IMPACT GRID ─── */
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 28px;
+  margin-top: 32px;
+}
+
+.impact-card {
+  background: var(--green-pale);
+  padding: 32px 24px;
+  border-radius: var(--radius-lg);
+  text-align: center;
+  border: 1px solid var(--border);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.impact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(27, 110, 58, 0.12);
+}
+
+.impact-icon {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.impact-card h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--green-dark);
+  margin-bottom: 8px;
+}
+
+.impact-card p {
+  font-size: 14px;
+  color: var(--ink-muted);
+  line-height: 1.6;
+}
+
+/* ─── ACCOUNT CARD ─── */
+.account-card {
+  background: var(--white);
+  border: 2px solid var(--gold);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  margin: 32px 0;
+}
+
+.account-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  gap: 16px;
+}
+
+.field-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--ink-muted);
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.field-value {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink);
+  text-align: right;
+  word-break: break-word;
+}
+
+.copy-field {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+.copy-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s, transform 0.2s;
+  flex-shrink: 0;
+}
+
+.copy-btn:hover {
+  color: #b8942f;
+  transform: scale(1.1);
+}
+
+.copy-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.account-divider {
+  height: 1px;
+  background: var(--border);
+}
+
+.account-note {
+  background: var(--gold-light);
+  border-left: 4px solid var(--gold);
+  padding: 16px;
+  border-radius: 6px;
+  margin-top: 24px;
+  font-size: 14px;
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+.account-note strong {
+  color: var(--green-dark);
+}
+
+/* ─── TIERS GRID ─── */
+.tiers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 28px;
+  margin-top: 32px;
+}
+
+.tier-card {
+  background: var(--off-white);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px 24px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.tier-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--gold);
+  box-shadow: 0 16px 40px rgba(201, 168, 76, 0.15);
+}
+
+.tier-amount {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+
+.tier-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--green-dark);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.tier-desc {
+  font-size: 14px;
+  color: var(--ink-muted);
+  line-height: 1.6;
+}
+
+/* ─── CONTACT SECTION ─── */
+.donate-contact {
+  background: var(--green-pale);
+  padding: 48px;
+  border-radius: var(--radius-lg);
+  text-align: center;
+}
+
+.donate-contact h2 {
+  margin-bottom: 12px;
+}
+
+.donate-contact .section-sub {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+}
+
+.contact-links {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 760px) {
+  .donate-container {
+    gap: 56px;
+  }
+
+  .impact-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .account-card {
+    padding: 24px;
+  }
+
+  .account-field {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 0;
+  }
+
+  .field-value {
+    text-align: left;
+  }
+
+  .tiers-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .donate-contact {
+    padding: 32px 24px;
+  }
+
+  .contact-links {
+    flex-direction: column;
+  }
+
+  .contact-links .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .donate-main {
+    padding: 0;
+  }
+
+  .donate-section h2 {
+    font-size: 24px;
+  }
+
+  .account-card {
+    padding: 16px;
+  }
+
+  .account-field {
+    padding: 10px 0;
+  }
+
+  .field-label,
+  .field-value {
+    font-size: 13px;
+  }
+
+  .tier-amount {
+    font-size: 28px;
+  }
+}
