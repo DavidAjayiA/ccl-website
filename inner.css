@@ -59,7 +59,7 @@
 .val-num {
   font-family: 'Cormorant Garamond', serif;
   font-size: 48px; font-weight: 700;
-  color: var(--green-light); line-height: 1; margin-bottom: 12px;
+  color: var(--green-mid); line-height: 1; margin-bottom: 12px;
 }
 .val-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 700; color: var(--ink); margin-bottom: 8px; }
 .val-card p  { font-size: 13px; color: var(--ink-muted); line-height: 1.65; }
@@ -81,7 +81,23 @@
   display: flex; align-items: center; justify-content: center;
   margin-bottom: 8px;
 }
-.team-initials { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 700; color: var(--green); }
+.team-initials {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--green);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team-initials img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 .team-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 700; color: var(--ink); }
 .team-role { font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: var(--green); font-weight: 600; }
@@ -407,4 +423,5 @@
   .join-cta          { padding: 28px; }
   .contact-info-panel{ padding: 28px 20px; }
   .contact-form-panel{ padding: 28px 20px; }
+  .val-num {color: var(--green-mid);}
 }

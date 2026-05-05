@@ -501,6 +501,7 @@
   .hero-title { font-size: 42px; }
   .stats-bar { padding: 20px 4%; }
   .donate-inner { padding: 40px 4%; }
+  .track-badge { background: var(--green-mid); color: white;}
 }
 
 
