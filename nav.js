@@ -19,7 +19,6 @@
   <nav class="site-nav" id="siteNav">
     <a href="index.html" class="nav-logo">
       <div class="nav-logo-mark">
-      
         <img src="ccl_logo-removebg-preview.png">
       </div>
       <div class="nav-logo-text">

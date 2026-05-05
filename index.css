@@ -308,6 +308,7 @@
   transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
   display: flex; flex-direction: column; gap: 10px;
   position: relative;
+
 }
 .track-card:hover {
   transform: translateY(-6px); box-shadow: 0 16px 48px rgba(27,110,58,0.12);
@@ -316,7 +317,7 @@
 
 .track-badge {
   display: inline-block;
-  background: var(--green-light); color: white;
+  background: var(--green-mid); color: rgb(255, 255, 255);
   font-size: 12px; font-weight: 600;
   padding: 6px 12px; border-radius: 6px;
   width: fit-content; margin-bottom: 8px;
