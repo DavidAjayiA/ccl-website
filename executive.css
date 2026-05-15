@@ -54,13 +54,21 @@
 /* Coach Image Block */
 .coach-image-block {
   background: linear-gradient(135deg, var(--green-light), var(--green-pale));
-  padding: 48px 32px;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  min-height: 200px;
+  min-height: 280px;
   border-bottom: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.coach-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .coach-image-placeholder {
@@ -165,12 +173,46 @@
 /* Operations Image Block */
 .ops-image-block {
   background: linear-gradient(135deg, var(--ops-color), rgba(27, 110, 58, 0.8));
-  padding: 56px 32px;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  min-height: 160px;
+  min-height: 240px;
+  overflow: hidden;
+}
+
+.ops-image-block.ops-dual {
+  padding: 0;
+}
+
+.ops-dual-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 100%;
+  gap: 0;
+}
+
+.ops-dual-item {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ops-dual-item:last-child {
+  border-right: none;
+}
+
+.ops-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .ops-image-placeholder {
@@ -487,8 +529,8 @@
 
 @media (max-width: 600px) {
   .coach-image-block {
-    padding: 32px 24px;
-    min-height: 160px;
+    padding: 0;
+    min-height: 220px;
   }
 
   .coach-image-placeholder {
@@ -503,9 +545,21 @@
     font-size: 18px;
   }
 
+  .ops-dual-images {
+    grid-template-columns: 1fr;
+  }
+
+  .ops-dual-item {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .ops-dual-item:last-child {
+    border-bottom: none;
+  }
+
   .ops-image-block {
-    padding: 40px 24px;
-    min-height: 120px;
+    min-height: 280px;
   }
 
   .ops-image-placeholder {
