@@ -1,0 +1,543 @@
+/* ════════════════════════════════════════════════════════════
+   EXECUTIVE PAGE STYLES
+   ════════════════════════════════════════════════════════════ */
+
+/* SECTION HEADERS */
+.exec-section-header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 56px;
+}
+
+.exec-section-header .tag {
+  display: inline-block;
+}
+
+.exec-section-header .section-title {
+  margin-bottom: 12px;
+}
+
+.exec-section-header .section-sub {
+  margin: 12px auto 0;
+}
+
+/* ════════════════════════════════════════════════════════════
+   TRACK COACHES SECTION
+   ════════════════════════════════════════════════════════════ */
+
+.exec-tracks-sec {
+  background: var(--white);
+}
+
+.coaches-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.coach-card {
+  background: var(--off-white);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.coach-card:hover {
+  border-color: var(--green);
+  box-shadow: 0 16px 48px rgba(27, 110, 58, 0.12);
+  transform: translateY(-6px);
+}
+
+/* Coach Image Block */
+.coach-image-block {
+  background: linear-gradient(135deg, var(--green-light), var(--green-pale));
+  padding: 48px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 200px;
+  border-bottom: 1px solid var(--border);
+}
+
+.coach-image-placeholder {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 56px;
+  font-weight: 700;
+  color: var(--green);
+  opacity: 0.3;
+}
+
+.coach-badge-track {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: var(--green);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* Coach Info */
+.coach-info {
+  padding: 28px 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.coach-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+
+.coach-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--green);
+  margin-bottom: 12px;
+}
+
+.coach-focus {
+  font-size: 13px;
+  color: var(--ink-muted);
+  line-height: 1.6;
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.coach-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+
+.meta-item {
+  font-size: 12px;
+  color: var(--ink-mid);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ════════════════════════════════════════════════════════════
+   INTERNAL OPERATIONS HUB SECTION
+   ════════════════════════════════════════════════════════════ */
+
+.exec-ops-sec {
+  background: var(--green-pale);
+}
+
+.ops-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.ops-card {
+  background: white;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.ops-card:hover {
+  border-color: var(--green-dark);
+  box-shadow: 0 16px 56px rgba(13, 66, 32, 0.15);
+  transform: translateY(-6px);
+}
+
+/* Operations Image Block */
+.ops-image-block {
+  background: linear-gradient(135deg, var(--ops-color), rgba(27, 110, 58, 0.8));
+  padding: 56px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 160px;
+}
+
+.ops-image-placeholder {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 52px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.ops-badge-dept {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Operations Info */
+.ops-info {
+  padding: 32px 28px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.ops-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.ops-responsibility {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--green-dark);
+  margin-bottom: 18px;
+}
+
+.ops-duties {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--ink-muted);
+  line-height: 1.6;
+}
+
+.ops-duties li {
+  padding-left: 20px;
+  position: relative;
+}
+
+.ops-duties li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--green);
+  font-weight: 600;
+}
+
+/* ════════════════════════════════════════════════════════════
+   ORGANIZATIONAL STRUCTURE
+   ════════════════════════════════════════════════════════════ */
+
+.structure-overview {
+  background: var(--white);
+}
+
+.structure-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.structure-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.structure-header .tag {
+  display: inline-block;
+}
+
+.structure-header .section-title {
+  margin-bottom: 12px;
+}
+
+.structure-content {
+  display: flex;
+  justify-content: center;
+}
+
+.structure-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Chart Tier */
+.chart-tier {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.chart-tier.tier-1 {
+  margin-bottom: 8px;
+}
+
+.chart-tier.tier-2 {
+  margin: 20px 0;
+}
+
+.chart-tier.tier-3 {
+  margin-top: 20px;
+}
+
+/* Chart Box */
+.chart-box {
+  padding: 20px 40px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+  min-width: 200px;
+  border: 2px solid;
+  transition: all 0.3s ease;
+}
+
+.chart-box.leadership {
+  background: var(--green-dark);
+  color: white;
+  border-color: var(--green-dark);
+  font-size: 16px;
+  font-weight: 700;
+  min-width: 240px;
+}
+
+.chart-box.track {
+  background: var(--green-light);
+  color: var(--green-dark);
+  border-color: var(--green);
+}
+
+.chart-box.track:hover {
+  background: var(--green);
+  color: white;
+}
+
+.chart-box.ops {
+  background: rgba(31, 110, 58, 0.08);
+  color: var(--green-dark);
+  border-color: var(--border);
+}
+
+.chart-box.ops:hover {
+  background: rgba(31, 110, 58, 0.15);
+  border-color: var(--green-dark);
+}
+
+/* Chart Tier 2 Boxes */
+.tier-2-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+}
+
+/* Chart Sub Heading */
+.chart-sub-heading {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* Tier 3 Boxes */
+.tier-3-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.chart-small {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  background: var(--green-light);
+  color: var(--green-dark);
+  border: 1px solid var(--border);
+  transition: all 0.2s ease;
+}
+
+.chart-small:hover {
+  background: var(--green);
+  color: white;
+  border-color: var(--green);
+}
+
+/* Chart Connector */
+.chart-connector {
+  width: 2px;
+  height: 24px;
+  background: var(--border);
+  margin: 8px 0;
+}
+
+/* ════════════════════════════════════════════════════════════
+   CTA SECTION
+   ════════════════════════════════════════════════════════════ */
+
+.cta-exec {
+  background: var(--green-dark);
+}
+
+.cta-exec-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.cta-text h2 {
+  font-size: clamp(28px, 3vw, 42px);
+  color: white;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.cta-text h2 em {
+  font-style: italic;
+  color: #8FE0AC;
+}
+
+.cta-text p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.65);
+  max-width: 420px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* ════════════════════════════════════════════════════════════
+   RESPONSIVE DESIGN
+   ════════════════════════════════════════════════════════════ */
+
+@media (max-width: 1100px) {
+  .coaches-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ops-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .exec-slide {
+    grid-template-columns: 280px 1fr;
+  }
+}
+
+@media (max-width: 860px) {
+  .coaches-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ops-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tier-2-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-exec-inner {
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  .cta-buttons {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .coach-image-block {
+    padding: 32px 24px;
+    min-height: 160px;
+  }
+
+  .coach-image-placeholder {
+    font-size: 44px;
+  }
+
+  .coach-info {
+    padding: 20px 16px;
+  }
+
+  .coach-name {
+    font-size: 18px;
+  }
+
+  .ops-image-block {
+    padding: 40px 24px;
+    min-height: 120px;
+  }
+
+  .ops-image-placeholder {
+    font-size: 40px;
+  }
+
+  .ops-info {
+    padding: 24px 20px;
+  }
+
+  .ops-name {
+    font-size: 20px;
+  }
+
+  .tier-3-boxes {
+    gap: 8px;
+  }
+
+  .chart-small {
+    padding: 8px 16px;
+    font-size: 11px;
+  }
+
+  .structure-header {
+    margin-bottom: 40px;
+  }
+
+  .chart-tier {
+    gap: 16px;
+  }
+
+  .cta-text h2 {
+    font-size: 28px;
+  }
+}

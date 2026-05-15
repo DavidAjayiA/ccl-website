@@ -8,6 +8,7 @@
     { href: 'programs.html',   label: 'Programs' },
     { href: 'events.html',     label: 'Events' },
     { href: 'membership.html', label: 'Membership' },
+    { href: 'executive.html',  label: 'Executive' },
     { href: 'blog.html',       label: 'Insights' },
     { href: 'alumni.html',     label: 'Alumni' },
     { href: 'gallery.html',    label: 'Gallery' },
