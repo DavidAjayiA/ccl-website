@@ -63,6 +63,8 @@
 
 .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
 
+
+
 .btn-outline-white {
   display: inline-flex; align-items: center; gap: 7px;
   font-family: 'Outfit', sans-serif; font-weight: 500;
@@ -177,7 +179,10 @@
 .sec-header .section-sub { margin: 12px auto 0; }
 
 .programs-grid {
-  display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px;
+  display: grid;
+   grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    /* border: 3px solid red; */
 }
 
 .prog-card {
@@ -295,11 +300,83 @@
 .cta-banner-left h2 em { font-style: italic; color: #8FE0AC; }
 .cta-banner-left p { font-size: 15px; color: rgba(255,255,255,0.6); margin-top: 8px; }
 
-/* ── TRACKS SECTION ── */
-.tracks-sec {}
+/* ── PROGRAMS SECTION ── */
+.programs-sec {}
+
+.programs-activities-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.program-card {
+  background: white; border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 28px 22px;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+  display: flex; flex-direction: column; gap: 10px;
+  position: relative;
+}
+.program-card:hover {
+  transform: translateY(-6px); box-shadow: 0 16px 48px rgba(27,110,58,0.12);
+  border-color: var(--green);
+}
+
+.program-badge {
+  display: inline-block;
+  background: var(--green-mid);
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+  width: fit-content;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.program-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px; font-weight: 700; color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.program-desc {
+  font-size: 13px; color: var(--ink-muted);
+  line-height: 1.6; flex: 1; margin-bottom: 12px;
+}
+
+.program-highlights {
+  display: flex; gap: 6px; flex-wrap: wrap;
+}
+
+.program-highlights span {
+  font-size: 11px; background: rgba(31,110,58,0.08);
+  color: var(--green-dark); padding: 4px 10px;
+  border-radius: 100px; border: 1px solid rgba(31,110,58,0.15);
+}
+
+
 
 .tracks-grid {
-  display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px;
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px;
+  /* border: 3px solid pink; */
+}
+
+.tracks-display {
+  border: 3px solid yellow;
+
+}
+
+.track-link{
+  background: var(--green-mid); 
+  color: rgb(255, 255, 255);
+  font-size: 12px; 
+  padding: 6px 12px; 
+  border-radius: 6px;
+  height: 110%;
+  text-align: center;
 }
 
 .track-card {
@@ -317,12 +394,19 @@
 
 .track-badge {
   display: inline-block;
-  background: var(--green-mid); color: rgb(255, 255, 255);
-  font-size: 12px; font-weight: 600;
-  padding: 6px 12px; border-radius: 6px;
-  width: fit-content; margin-bottom: 8px;
+  background: var(--green-mid); 
+  color: rgb(255, 255, 255);
+  font-size: 12px; 
+  font-weight: 600;
+  padding: 6px 12px; 
+  border-radius: 6px;
+  width: fit-content;
+   margin-bottom: 8px;
   letter-spacing: 0.5px;
+  /* border: 3px solid red; */
 }
+
+
 
 .track-title {
   font-family: 'Cormorant Garamond', serif;
@@ -362,6 +446,7 @@
   max-width: 1400px; margin: 0 auto;
   padding: 80px 8%;
 }
+
 
 .donate-content {}
 
@@ -473,6 +558,7 @@
 /* ── RESPONSIVE ── */
 @media (max-width: 1100px) {
   .programs-grid { grid-template-columns: repeat(3, 1fr); }
+  .programs-activities-grid { grid-template-columns: repeat(3, 1fr); }
   .tracks-grid { grid-template-columns: repeat(3, 1fr); }
 }
 @media (max-width: 860px) {
@@ -484,6 +570,7 @@
   .two-col.reverse .col-right { order: unset; }
   .testi-grid { grid-template-columns: 1fr; }
   .programs-grid { grid-template-columns: 1fr 1fr; }
+  .programs-activities-grid { grid-template-columns: 1fr 1fr; }
   .tracks-grid { grid-template-columns: 1fr 1fr; }
   .donate-inner { grid-template-columns: 1fr; gap: 40px; padding: 60px 5%; }
   .donate-visual { margin-top: 20px; }
@@ -497,11 +584,13 @@
 }
 @media (max-width: 600px) {
   .programs-grid { grid-template-columns: 1fr; }
+  .programs-activities-grid { grid-template-columns: 1fr; }
   .tracks-grid { grid-template-columns: 1fr; }
   .hero-title { font-size: 42px; }
   .stats-bar { padding: 20px 4%; }
   .donate-inner { padding: 40px 4%; }
   .track-badge { background: var(--green-mid); color: white;}
+  .program-badge { background: var(--green-mid); color: white;}
 }
 
 

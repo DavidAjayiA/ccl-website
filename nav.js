@@ -12,7 +12,7 @@
     { href: 'blog.html',       label: 'Insights' },
     { href: 'alumni.html',     label: 'Alumni' },
     { href: 'gallery.html',    label: 'Gallery' },
-    { href: 'partners.html',   label: 'Partners' },
+    // { href: 'partners.html',   label: 'Partners' },
     { href: 'contact.html',    label: 'Contact' },
   ];
 
@@ -76,7 +76,6 @@
         <ul>
           <li><a href="blog.html">Insights</a></li>
           <li><a href="alumni.html">Alumni Network</a></li>
-          <li><a href="partners.html">Partners</a></li>
           <li><a href="gallery.html">Gallery</a></li>
         </ul>
       </div>
@@ -85,7 +84,7 @@
         <ul>
           <li><a href="contact.html">Get in Touch</a></li>
           <li><a href="mailto:consultingcluboflagos@gmail.com">consultingcluboflagos@gmail.com</a></li>
-          <li><a href="membership.html">Join CCL</a></li>
+          <li><a href="https://www.google.com/maps/place/University+of+Lagos/@6.515759,3.3898447,17z/data=!3m1!4b1!4m6!3m5!1s0x103b8d24c04d3e75:0x7347f1a6be13e004!8m2!3d6.515759!4d3.3898447!16zL20vMDZnOWdo?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">University of Lagos, Akoka, Yaba, Lagos</a></li>
         </ul>
       </div>
     </div>
